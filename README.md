@@ -4,7 +4,7 @@
 
 ### Validation Suite for Gravitational Frequency Shift Analysis
 
-[![Tests](https://img.shields.io/badge/tests-56%2F56-brightgreen)](https://github.com/error-wtf/frequency-curvature-validation)
+[![Tests](https://img.shields.io/badge/tests-64%2F64-brightgreen)](https://github.com/error-wtf/frequency-curvature-validation)
 [![Pass Rate](https://img.shields.io/badge/pass%20rate-100%25-brightgreen)](https://github.com/error-wtf/frequency-curvature-validation)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-ACSL%201.4-orange)](LICENSE)
@@ -23,7 +23,7 @@ This repository provides a complete, reproducible validation suite for the paper
 
 ### Key Features
 
-- **56 automated tests** covering all paper equations and claims
+- **64 automated tests** covering all paper equations and claims
 - **Real experimental data** from Gravity Probe A, Galileo, GPS, Pound-Rebka
 - **NSR/NGR separation** - distinguishes removable from non-removable effects
 - **SSZ integration** - connection to Segmented Spacetime theory
@@ -93,7 +93,8 @@ frequency-curvature-validation/
 | NSR/NGR | 4 | 4 | Separation Tests |
 | Dynamic | 4 | 4 | Time-dependent Loops |
 | Experimental | 5 | 5 | Real Data Validation |
-| **Total** | **56** | **56** | **100%** |
+| **Shapiro** | **13** | **13** | **Shapiro Delay (4th GR Test)** |
+| **Total** | **64** | **64** | **100%** |
 
 ---
 
@@ -135,6 +136,16 @@ N = N_SR + N_GR
 | GPS System | 1978+ | 38.6 us/day | 38.4 us/day | < 2 sigma |
 | Galileo 5/6 | 2018 | 4.5e-10 | 4.5e-10 | < 1 sigma |
 | Tokyo Skytree | 2020 | 4.9e-15 | 4.9e-15 | < 1 sigma |
+
+### Shapiro Delay Experiments
+
+| Experiment | Year | Result | Precision | Notes |
+|------------|------|--------|-----------|-------|
+| Cassini | 2003 | γ = 1.000021 | ± 2.3×10⁻⁵ | Best ever |
+| Viking | 1979 | γ = 1.000 | ± 0.002 | Mars lander |
+| Mariner 6/7 | 1969 | γ ≈ 1 | ± 0.03 | First spacecraft |
+| PSR J0737-3039 | 2006 | γ = 1.000 | ± 0.001 | Double pulsar |
+| GW170817 | 2017 | Δt < 1.7s | - | GW vs γ-ray |
 
 ---
 

@@ -1,0 +1,72 @@
+{
+  "shapiro_delay_experiments": {
+    "description": "Historical Shapiro delay measurements - Fourth test of GR",
+    "formula": "Δt = (1+γ)(r_s/c) × ln(4r₁r₂/d²)",
+    "gr_prediction": "γ = 1",
+    "experiments": [
+      {
+        "name": "Cassini",
+        "year": 2003,
+        "type": "spacecraft",
+        "target": "Saturn",
+        "gamma": 1.000021,
+        "uncertainty": 0.000023,
+        "precision_ppm": 23,
+        "notes": "Best measurement ever achieved"
+      },
+      {
+        "name": "Viking",
+        "year": 1979,
+        "type": "lander",
+        "target": "Mars",
+        "gamma": 1.000,
+        "uncertainty": 0.002,
+        "precision_ppm": 2000,
+        "notes": "Mars lander ranging"
+      },
+      {
+        "name": "Mariner 6/7",
+        "year": 1969,
+        "type": "spacecraft",
+        "target": "Mars flyby",
+        "gamma": 1.0,
+        "uncertainty": 0.03,
+        "precision_ppm": 30000,
+        "notes": "First spacecraft test"
+      },
+      {
+        "name": "PSR J0737-3039",
+        "year": 2006,
+        "type": "pulsar",
+        "target": "Double pulsar",
+        "gamma": 1.000,
+        "uncertainty": 0.001,
+        "precision_ppm": 1000,
+        "notes": "Best pulsar constraint"
+      },
+      {
+        "name": "GW170817",
+        "year": 2017,
+        "type": "multimessenger",
+        "target": "Neutron star merger",
+        "delay_difference_s": 1.7,
+        "distance_mpc": 40,
+        "notes": "GW and gamma-ray same Shapiro delay"
+      }
+    ]
+  },
+  "physical_constants": {
+    "G": 6.6743e-11,
+    "c": 299792458,
+    "M_sun_kg": 1.98892e30,
+    "R_sun_m": 6.957e8,
+    "AU_m": 1.495978707e11,
+    "r_s_sun_m": 2953.25
+  },
+  "ssz_predictions": {
+    "weak_field": "SSZ = GR to first order",
+    "correction": "O((r_s/r)²) ~ 10⁻¹⁶ in solar system",
+    "testable": false,
+    "notes": "SSZ correction unmeasurable with current technology"
+  }
+}
