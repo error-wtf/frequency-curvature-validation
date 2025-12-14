@@ -1,0 +1,35 @@
+{
+  "title": "SSZ vs GR Predictions",
+  "rows": [
+    {
+      "observable": "Time Dilation (r=2r_s)",
+      "GR": "0.7071",
+      "SSZ": "0.6926",
+      "difference": "-2.0%"
+    },
+    {
+      "observable": "Redshift (NS)",
+      "GR": "0.4142",
+      "SSZ": "0.4438",
+      "difference": "+7.1%"
+    },
+    {
+      "observable": "Universal r*/r_s",
+      "GR": "N/A",
+      "SSZ": "1.386562",
+      "difference": "Mass-independent!"
+    },
+    {
+      "observable": "Xi_max",
+      "GR": "N/A",
+      "SSZ": "0.80",
+      "difference": "No singularity"
+    },
+    {
+      "observable": "phi factor",
+      "GR": "N/A",
+      "SSZ": "1.618034",
+      "difference": "Golden ratio fundamental"
+    }
+  ]
+}

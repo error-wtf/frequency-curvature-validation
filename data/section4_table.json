@@ -1,0 +1,106 @@
+{
+  "title": "Loop Closure Tests",
+  "equation": "I_ABC = delta_AB + delta_BC + delta_CA",
+  "results": [
+    {
+      "configuration": "Horizontal (same altitude)",
+      "clocks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "positions": [
+        "400 km",
+        "400 km",
+        "400 km"
+      ],
+      "delta_AB": 0.0,
+      "delta_BC": 0.0,
+      "delta_CA": 0.0,
+      "I_ABC": 0.0,
+      "expected_I": 0.0,
+      "curvature_detected": false,
+      "description": "Co-altitude clocks: no vertical gradient"
+    },
+    {
+      "configuration": "Vertical (radial)",
+      "clocks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "positions": [
+        "Surface",
+        "10,000 km",
+        "20,000 km"
+      ],
+      "delta_AB": -4.2520786900526837e-10,
+      "delta_BC": -1.027266050054904e-10,
+      "delta_CA": 5.279343627534217e-10,
+      "I_ABC": -1.1125733714817617e-16,
+      "expected_I": 0.0,
+      "curvature_detected": false,
+      "description": "Radial arrangement: 1D gradient"
+    },
+    {
+      "configuration": "Triangle (3D)",
+      "clocks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "positions": [
+        "Surface",
+        "5 km + 10 km E",
+        "5 km + 10 km N"
+      ],
+      "delta_AB": 2.5e-13,
+      "delta_BC": 0.0,
+      "delta_CA": -2.5e-13,
+      "I_ABC": 0.0,
+      "expected_I": 0.0,
+      "curvature_detected": false,
+      "description": "3D triangle: path-independent"
+    },
+    {
+      "configuration": "Neutron Star (strong field)",
+      "clocks": [
+        "A",
+        "B",
+        "C"
+      ],
+      "positions": [
+        "2 R_NS",
+        "3 R_NS",
+        "4 R_NS"
+      ],
+      "delta_AB": -0.04166455525663246,
+      "delta_BC": -0.019598745908289607,
+      "delta_CA": 0.06126330116492194,
+      "I_ABC": -1.249000902703301e-16,
+      "expected_I": 0.0,
+      "curvature_detected": false,
+      "description": "Strong field: large delta values but I=0"
+    },
+    {
+      "configuration": "GPS Constellation",
+      "clocks": [
+        "Ground",
+        "Sat1",
+        "Sat2"
+      ],
+      "positions": [
+        "Surface",
+        "20,200 km",
+        "20,200 km"
+      ],
+      "delta_AB": 5.292002390454302e-10,
+      "delta_BC": 0.0,
+      "delta_CA": -5.292002390454302e-10,
+      "I_ABC": 0.0,
+      "expected_I": 0.0,
+      "curvature_detected": false,
+      "description": "GPS: practical frequency comparison"
+    }
+  ]
+}

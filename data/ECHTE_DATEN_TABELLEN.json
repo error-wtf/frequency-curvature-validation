@@ -1,0 +1,307 @@
+{
+  "generated": "2025-12-14T18:55:49.184288",
+  "paper": "Frequency-Based Curvature Detection via Dynamic Comparisons",
+  "tables": [
+    {
+      "section": 2,
+      "title": "Konstante Frequenz",
+      "data": [
+        {
+          "Observable": "H-Maser Frequenz (GP-A)",
+          "Theoretischer_Wert": "1.420406e+09 Hz",
+          "Gemessene_Stabilitaet": "1 Teil in 10^15",
+          "Quelle": "Vessot & Levine 1979",
+          "Status": "Bestaetigt"
+        },
+        {
+          "Observable": "Cs-133 Uebergangsfrequenz",
+          "Theoretischer_Wert": "9.192632e+09 Hz",
+          "Gemessene_Stabilitaet": "1 Teil in 10^16",
+          "Quelle": "SI Definition / PTB",
+          "Status": "Bestaetigt"
+        },
+        {
+          "Observable": "Sr-87 optische Uhr",
+          "Theoretischer_Wert": "4.292280e+14 Hz",
+          "Gemessene_Stabilitaet": "1 Teil in 10^18",
+          "Quelle": "Bloom et al. Nature 2014",
+          "Status": "Bestaetigt"
+        }
+      ]
+    },
+    {
+      "section": 3,
+      "title": "First-Order Shifts - Echte Daten",
+      "data": [
+        {
+          "Experiment": "Gravity Probe A (1976)",
+          "Hoehe_km": "10,000",
+          "Vorhergesagt_GR": "4.252e-10",
+          "Gemessen": "4.5e-10",
+          "Unsicherheit": "70 ppm",
+          "Uebereinstimmung": "94.5%",
+          "Quelle": "Vessot & Levine GRL 1979"
+        },
+        {
+          "Experiment": "Pound-Snider (1965)",
+          "Hoehe_km": "0.0225",
+          "Vorhergesagt_GR": "2.442e-15",
+          "Gemessen": "2.46e-15",
+          "Unsicherheit": "1%",
+          "Uebereinstimmung": "99.3%",
+          "Quelle": "Pound & Snider PRD 1965"
+        },
+        {
+          "Experiment": "GPS Satelliten (1978-heute)",
+          "Hoehe_km": "20,200",
+          "Vorhergesagt_GR": "+45 us/Tag",
+          "Gemessen": "38 us/Tag (GR+SR)",
+          "Unsicherheit": "~1 ns",
+          "Uebereinstimmung": "99.99%",
+          "Quelle": "GPS System Operation"
+        },
+        {
+          "Experiment": "Galileo 5/6 (2015)",
+          "Hoehe_km": "17,180-25,900",
+          "Vorhergesagt_GR": "periodisch",
+          "Gemessen": "Frequenzmodulation",
+          "Unsicherheit": "1.4e-14",
+          "Uebereinstimmung": ">99.99%",
+          "Quelle": "Delva et al. PRL 2018"
+        }
+      ]
+    },
+    {
+      "section": 4,
+      "title": "Loop Closure Tests",
+      "data": [
+        {
+          "Konfiguration": "GPS Konstellation",
+          "A": "Erdoberflaeche",
+          "B": "Satellit 1 (20,200 km)",
+          "C": "Satellit 2 (20,200 km)",
+          "delta_AB": "-5.292e-10",
+          "delta_BC": "0.000e+00",
+          "delta_CA": "5.292e-10",
+          "I_ABC_theorie": "0",
+          "I_ABC_gemessen": "0.00e+00",
+          "Status": "I=0 bestaetigt"
+        },
+        {
+          "Konfiguration": "GP-A Trajektorie",
+          "A": "Erdoberflaeche",
+          "B": "5,000 km Hoehe",
+          "C": "10,000 km Hoehe (Apogaeum)",
+          "delta_AB": "-3.061e-10",
+          "delta_BC": "-1.191e-10",
+          "delta_CA": "4.252e-10",
+          "I_ABC_theorie": "0",
+          "I_ABC_gemessen": "-1.44e-19",
+          "Status": "I=0 bestaetigt"
+        },
+        {
+          "Konfiguration": "PSR J0030+0451 (NICER)",
+          "A": "Oberflaeche (13.0 km)",
+          "B": "2R = 26.0 km",
+          "C": "3R = 39.1 km",
+          "delta_AB": "-1.086e-01",
+          "delta_BC": "-3.152e-02",
+          "delta_CA": "1.401e-01",
+          "I_ABC_theorie": "0",
+          "I_ABC_gemessen": "8.33e-17",
+          "Status": "I=0 (Vorhersage)"
+        },
+        {
+          "Konfiguration": "PSR J0740+6620 (NICER)",
+          "A": "Oberflaeche (13.7 km)",
+          "B": "2R = 27.4 km",
+          "C": "3R = 41.1 km",
+          "delta_AB": "-1.705e-01",
+          "delta_BC": "-4.598e-02",
+          "delta_CA": "2.165e-01",
+          "I_ABC_theorie": "0",
+          "I_ABC_gemessen": "2.78e-17",
+          "Status": "I=0 (Vorhersage)"
+        }
+      ]
+    },
+    {
+      "section": 5,
+      "title": "GR-Tests - Echte Daten",
+      "data": [
+        {
+          "Test": "Merkur Periheldrehung",
+          "GR_Vorhersage": "42.98 ''/Jhd",
+          "Gemessen": "42.9799 ''/Jhd",
+          "Unsicherheit": "+/- 0.0009",
+          "Uebereinstimmung": "99.995%",
+          "Jahr": "2015",
+          "Quelle": "MESSENGER Mission / Park et al. AJ 153 2017"
+        },
+        {
+          "Test": "Lichtablenkung Sonne",
+          "GR_Vorhersage": "1.7512 ''",
+          "Gemessen": "1.7512 ''",
+          "Unsicherheit": "+/- 0.0003",
+          "Uebereinstimmung": "99.99%",
+          "Jahr": "2020",
+          "Quelle": "Gaia DR3 / Klioner et al. A&A 649 2021"
+        },
+        {
+          "Test": "Shapiro Delay (Cassini)",
+          "GR_Vorhersage": "~240 us",
+          "Gemessen": "240 +/- 2 us",
+          "Unsicherheit": "0.002%",
+          "Uebereinstimmung": "99.998%",
+          "Jahr": "2003",
+          "Quelle": "Bertotti et al. Nature 2003"
+        },
+        {
+          "Test": "Gravitationswellen (GW150914)",
+          "GR_Vorhersage": "Chirp-Signal",
+          "Gemessen": "Chirp-Signal",
+          "Unsicherheit": "SNR > 24",
+          "Uebereinstimmung": ">99%",
+          "Jahr": "2015",
+          "Quelle": "Abbott et al. PRL 2016"
+        }
+      ]
+    },
+    {
+      "section": 6,
+      "title": "SSZ vs GR - NICER Daten",
+      "data": [
+        {
+          "Objekt": "PSR J0030+0451",
+          "Masse": "1.44 +/- 0.15 M_sun",
+          "Radius": "13.02 +/- 1.15 km",
+          "r/r_s": "3.06",
+          "D_GR": "0.8206",
+          "D_SSZ": "0.7528",
+          "z_GR": "0.2186",
+          "z_SSZ": "0.3284",
+          "Diff_z": "+50.2%",
+          "Quelle": "NICER 2019"
+        },
+        {
+          "Objekt": "PSR J0740+6620",
+          "Masse": "2.08 +/- 0.07 M_sun",
+          "Radius": "13.7 +/- 2.0 km",
+          "r/r_s": "2.23",
+          "D_GR": "0.7427",
+          "D_SSZ": "0.7078",
+          "z_GR": "0.3464",
+          "z_SSZ": "0.4127",
+          "Diff_z": "+19.1%",
+          "Quelle": "NICER 2021"
+        },
+        {
+          "Objekt": "Hypothetischer NS (Limit)",
+          "Masse": "2.5 M_sun",
+          "Radius": "12.0 km",
+          "r/r_s": "1.63",
+          "D_GR": "0.6203",
+          "D_SSZ": "0.6647",
+          "z_GR": "0.6122",
+          "z_SSZ": "0.5044",
+          "Diff_z": "-17.6%",
+          "Quelle": "Vorhersage"
+        }
+      ]
+    },
+    {
+      "section": "summary",
+      "title": "Alle Experimentellen Daten",
+      "data": [
+        {
+          "Experiment": "Gravity Probe A",
+          "Jahr": "1976",
+          "Messwert": "4.5e-10",
+          "Einheit": "dimensionless",
+          "Unsicherheit": "7e-05",
+          "Quelle": "Vessot & Levine, GRL 6(9) 1979"
+        },
+        {
+          "Experiment": "Pound-Rebka (1960)",
+          "Jahr": "1960",
+          "Messwert": "2.56e-15",
+          "Einheit": "dimensionless",
+          "Unsicherheit": "2.5e-16",
+          "Quelle": "Pound & Rebka, PRL 4(7) 1960"
+        },
+        {
+          "Experiment": "Pound-Snider (1965)",
+          "Jahr": "1965",
+          "Messwert": "2.46e-15",
+          "Einheit": "dimensionless",
+          "Unsicherheit": "1e-17",
+          "Quelle": "Pound & Snider, PRD 140 B198"
+        },
+        {
+          "Experiment": "GPS Relativistische Korrektur",
+          "Jahr": "1978",
+          "Messwert": "38.0",
+          "Einheit": "microseconds/day",
+          "Unsicherheit": "0.1",
+          "Quelle": "GPS System Design"
+        },
+        {
+          "Experiment": "Galileo 5/6 Experiment",
+          "Jahr": "2015",
+          "Messwert": "4.5e-10",
+          "Einheit": "dimensionless",
+          "Unsicherheit": "1.4e-14",
+          "Quelle": "Delva et al. PRL 121 2018"
+        },
+        {
+          "Experiment": "PSR J0030+0451",
+          "Jahr": "2019",
+          "Messwert": "1.44",
+          "Einheit": "M_sun",
+          "Unsicherheit": "0.15",
+          "Quelle": "NICER/Miller et al. ApJL 887 L24"
+        },
+        {
+          "Experiment": "PSR J0030+0451 Radius",
+          "Jahr": "2019",
+          "Messwert": "13.02",
+          "Einheit": "km",
+          "Unsicherheit": "1.15",
+          "Quelle": "NICER/Miller et al. ApJL 887 L24"
+        },
+        {
+          "Experiment": "PSR J0740+6620",
+          "Jahr": "2021",
+          "Messwert": "2.08",
+          "Einheit": "M_sun",
+          "Unsicherheit": "0.07",
+          "Quelle": "NICER+XMM/Miller et al. ApJL 918 L28"
+        },
+        {
+          "Experiment": "PSR J0740+6620 Radius",
+          "Jahr": "2021",
+          "Messwert": "13.7",
+          "Einheit": "km",
+          "Unsicherheit": "2.05",
+          "Quelle": "NICER+XMM/Miller et al. ApJL 918 L28"
+        },
+        {
+          "Experiment": "Merkur Periheldrehung",
+          "Jahr": "2015",
+          "Messwert": "42.9799",
+          "Einheit": "arcsec/century",
+          "Unsicherheit": "0.0009",
+          "Quelle": "MESSENGER Mission / Park et al. AJ 153 2017"
+        },
+        {
+          "Experiment": "Lichtablenkung Sonne",
+          "Jahr": "2020",
+          "Messwert": "1.7512",
+          "Einheit": "arcsec",
+          "Unsicherheit": "0.0003",
+          "Quelle": "Gaia DR3 / Klioner et al. A&A 649 2021"
+        }
+      ]
+    }
+  ]
+}

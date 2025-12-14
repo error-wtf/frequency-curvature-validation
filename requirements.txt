@@ -1,0 +1,5 @@
+# Frequency-Based Curvature Detection - Validation Suite
+# Requirements
+
+numpy>=1.20.0
+pytest>=7.0.0
