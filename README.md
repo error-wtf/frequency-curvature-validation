@@ -1,20 +1,33 @@
-# Frequency-Based Curvature Detection - Validation Suite
+<div align="center">
 
-**Paper:** "Frequency-Based Curvature Detection via Dynamic Comparisons"  
-**Authors:** Carmen N. Wrede, Lino P. Casu, Bingsi  
-**Tests:** 56/56 (100% pass rate)
+# Frequency-Based Curvature Detection
+
+### Validation Suite for Gravitational Frequency Shift Analysis
+
+[![Tests](https://img.shields.io/badge/tests-56%2F56-brightgreen)](https://github.com/error-wtf/frequency-curvature-validation)
+[![Pass Rate](https://img.shields.io/badge/pass%20rate-100%25-brightgreen)](https://github.com/error-wtf/frequency-curvature-validation)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-ACSL%201.4-orange)](LICENSE)
+
+**Paper:** *"Frequency-Based Curvature Detection via Dynamic Comparisons"*
+
+**Authors:** Carmen N. Wrede, Lino P. Casu, Bingsi
+
+</div>
 
 ---
 
-## Overview
+## Abstract
 
-This repository contains the complete validation test suite for the paper "Frequency-Based Curvature Detection via Dynamic Comparisons". The tests validate:
+This repository provides a complete, reproducible validation suite for the paper *"Frequency-Based Curvature Detection via Dynamic Comparisons"*. The framework introduces a novel method for detecting spacetime curvature using frequency comparisons between atomic clocks, with applications ranging from GPS precision to neutron star physics.
 
-1. **Core Equations (Eq. 1-5)** - Frequency comparison framework
-2. **Loop Closure (I_ABC = 0)** - Non-integrability detection
-3. **NSR/NGR Separation** - Removable vs non-removable contributions
-4. **Experimental Validation** - Real data from GP-A, Galileo, GPS, etc.
-5. **SSZ Integration** - Connection to Segmented Spacetime theory
+### Key Features
+
+- **56 automated tests** covering all paper equations and claims
+- **Real experimental data** from Gravity Probe A, Galileo, GPS, Pound-Rebka
+- **NSR/NGR separation** - distinguishes removable from non-removable effects
+- **SSZ integration** - connection to Segmented Spacetime theory
+- **LaTeX-ready tables** for direct paper integration
 
 ---
 
@@ -139,15 +152,103 @@ N = N_SR + N_GR
 
 ## Requirements
 
-- Python >= 3.8
-- NumPy >= 1.20
-- pytest >= 7.0
+```
+Python >= 3.8
+NumPy >= 1.20
+pytest >= 7.0
+```
+
+Install with:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Physics Background
+
+### The Core Idea
+
+In General Relativity, clocks at different gravitational potentials tick at different rates. This repository validates a framework that:
+
+1. **Measures** frequency shifts between clocks: `delta_AB = ln(nu_A / nu_B)`
+2. **Decomposes** the shift into removable (SR) and non-removable (GR) parts
+3. **Detects curvature** via loop closure: if `I_ABC != 0`, spacetime is curved
+
+### Why This Matters
+
+| Application | Precision Required | Status |
+|-------------|-------------------|--------|
+| GPS Navigation | 10^-10 | Operational |
+| Geodesy (cm) | 10^-18 | Current tech |
+| Dark Matter Detection | 10^-21 | Future |
+| Gravitational Wave Memory | 10^-24 | Planned |
+
+---
+
+## Theoretical Framework
+
+### Equation 1: Proper Frequency
+```
+nu(tau) = nu_0 = const
+```
+In flat spacetime, a clock's proper frequency is constant.
+
+### Equation 2: Frequency Comparison  
+```
+delta_AB = ln(nu_A / nu_B)
+```
+Logarithmic ratio ensures additivity: `delta_AC = delta_AB + delta_BC`
+
+### Equation 3-4: Loop Closure
+```
+I_ABC = delta_AB + delta_BC + delta_CA = 0
+```
+**Key result:** This holds for ALL gravitational field strengths, from Earth's surface to neutron stars.
+
+### Equation 5: Information Decomposition
+```
+N = N_SR + N_GR
+```
+- **N_SR** (Special Relativistic): Removable by frame choice (velocity-dependent)
+- **N_GR** (General Relativistic): Non-removable (curvature, frame-independent)
+
+In SSZ theory: **N_GR = Xi(r)** (segment density)
+
+---
+
+## Connection to SSZ Theory
+
+The Segmented Spacetime (SSZ) framework provides an alternative description where:
+
+| Concept | GR | SSZ |
+|---------|-----|-----|
+| Curvature source | Metric tensor | Segment density Xi(r) |
+| At horizon (r=r_s) | Singularity (D=0) | Finite (D=0.61) |
+| Golden ratio | Not present | Fundamental (phi) |
+| N_GR interpretation | Curvature effect | Non-removable information |
+
+**Key prediction:** SSZ predicts **+19% to +50% higher redshift** for neutron stars compared to GR, testable with NICER (2025-2027).
+
+---
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [ERWEITERTE_VALIDIERUNGSTABELLEN.md](docs/ERWEITERTE_VALIDIERUNGSTABELLEN.md) | All validation tables (LaTeX-ready) |
+| [PHYSIK_ANALYSE_SSZ_GR_ABWEICHUNGEN.md](docs/PHYSIK_ANALYSE_SSZ_GR_ABWEICHUNGEN.md) | Physics analysis of GR-SSZ deviations |
 
 ---
 
 ## License
 
-Anti-Capitalist Software License v1.4
+**Anti-Capitalist Software License v1.4**
+
+This software may be used for any purpose except by:
+- Law enforcement, military, or intelligence agencies
+- Companies with > $10M annual revenue
+- Anyone using it to exploit workers
 
 ---
 
@@ -155,18 +256,30 @@ Anti-Capitalist Software License v1.4
 
 ```bibtex
 @article{Wrede2025,
-  author = {Wrede, Carmen N. and Casu, Lino P. and Bingsi},
-  title = {Frequency-Based Curvature Detection via Dynamic Comparisons},
-  year = {2025},
-  note = {Validation: 56/56 tests (100\%)}
+  author  = {Wrede, Carmen N. and Casu, Lino P. and Bingsi},
+  title   = {Frequency-Based Curvature Detection via Dynamic Comparisons},
+  year    = {2025},
+  note    = {Validation suite: 56/56 tests (100\%)},
+  url     = {https://github.com/error-wtf/frequency-curvature-validation}
 }
 ```
 
 ---
 
-## Contact
+## Related Repositories
 
-- Carmen N. Wrede
-- Lino P. Casu
+| Repository | Description |
+|------------|-------------|
+| [ssz-metric-pure](https://github.com/error-wtf/ssz-metric-pure) | Core SSZ metric implementation |
+| [ssz-qubits](https://github.com/error-wtf/ssz-qubits) | Quantum computing applications |
+| [g79-cygnus-tests](https://github.com/error-wtf/g79-cygnus-tests) | Cygnus X-1 validation |
 
-**Repository:** https://github.com/error-wtf/frequency-curvature-validation
+---
+
+<div align="center">
+
+**Made with science by Carmen Wrede & Lino Casu**
+
+*"The best theory is one that not only explains, but also predicts."*
+
+</div>
