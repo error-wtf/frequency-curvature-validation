@@ -45,7 +45,7 @@ def ssz_xi_weak(r: float, M: float) -> float:
 def ssz_xi_strong(r: float, M: float) -> float:
     """
     SSZ segmentation parameter (strong field).
-    Xi(r) = 1 - exp(-φr/r_s)
+    Xi(r) = 1 - exp(-φr_s / r)
     """
     rs = 2 * G * M / C**2
     return 1 - np.exp(-PHI * r / rs)
